@@ -1,4 +1,4 @@
-package com.example.favoritelistapplication.ui.notifications
+package com.example.favoritelistapplication.ui.favRegister
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,7 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class NotificationsViewModel @Inject internal constructor() : ViewModel() {
+class FavRegisterViewModel @Inject internal constructor() : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"

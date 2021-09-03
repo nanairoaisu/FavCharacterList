@@ -7,14 +7,14 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.favoritelistapplication.ui.home.HomeFragment"
+        android:name="com.example.favoritelistapplication.ui.favList.FavListFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_fav_list" />
 
     <fragment
         android:id="@+id/navigation_birthday"
         android:name="com.example.favoritelistapplication.ui.birthday.BirthdayFragment"
         android:label="@string/title_birthday"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_birthday" />
 
 </navigation>
