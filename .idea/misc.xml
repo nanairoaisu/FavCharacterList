@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_birthday_black_24dp.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_birthday_brack_24dp.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_launcher_background.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.16574074074074074" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/drawable/ic_people_black_24dp.xml" value="0.16574074074074074" />
         <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
-        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/menu/bottom_nav_menu.xml" value="0.1175925925925926" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/layout/fragment_dashboard.xml" value="0.10131712259371833" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/layout/fragment_home.xml" value="0.10005065856129686" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/layout/fragment_notifications.xml" value="0.1" />
+        <entry key="..\:/Users/maket/Documents/FavoriteListApplication/app/src/main/res/menu/bottom_nav_menu.xml" value="0.16666666666666666" />
       </map>
     </option>
   </component>
