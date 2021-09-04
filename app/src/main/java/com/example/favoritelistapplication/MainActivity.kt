@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation: BottomNavigationView = binding.bottomNavigation
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_fav_list, R.id.navigation_birthday
+                R.id.fragment_fav_list, R.id.fragment_birthday
             )
         )
 

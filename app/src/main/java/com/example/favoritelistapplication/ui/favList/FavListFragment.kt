@@ -8,6 +8,8 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.favoritelistapplication.R
 import com.example.favoritelistapplication.databinding.FragmentFavListBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -37,6 +39,14 @@ class FavListFragment : Fragment() {
             textView.text = it
         })
         return root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.fab.setOnClickListener {
+            findNavController().navigate(R.id.action_fav_list_fragment_to_fav_register_fragment)
+        }
     }
 
     override fun onDestroyView() {
