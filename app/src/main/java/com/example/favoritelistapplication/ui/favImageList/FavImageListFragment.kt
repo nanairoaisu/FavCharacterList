@@ -1,6 +1,5 @@
 package com.example.favoritelistapplication.ui.favImageList
 
-import androidx.lifecycle.ViewModelProvider
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater

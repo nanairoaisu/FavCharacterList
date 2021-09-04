@@ -3,7 +3,6 @@ package com.example.favoritelistapplication
 import android.os.Bundle
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -25,7 +24,7 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation: BottomNavigationView = binding.bottomNavigation
         val appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.navigation_home, R.id.navigation_birthday
+                R.id.navigation_fav_list, R.id.navigation_birthday
             )
         )
 
