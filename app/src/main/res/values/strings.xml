@@ -4,7 +4,10 @@
     <string name="title_fav_register">FavRegister</string>
     <string name="title_fav_image_list">FavImageList</string>
     <string name="title_fav_image_register">FavImageRegister</string>
+    <string name="title_special_day">SpecialDay</string>
     <string name="title_birthday">Birthday</string>
     <string name="title_anniversary">Anniversary</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
