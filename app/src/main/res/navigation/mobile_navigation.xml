@@ -42,6 +42,18 @@
     </fragment>
 
     <fragment
+        android:id="@+id/fragment_special_day"
+        android:name="com.example.favoritelistapplication.ui.SpecialDayViewPagerFragment"
+        android:label="@string/title_special_day"
+        tools:layout="@layout/fragment_special_day_view_pager"
+        >
+
+        <action
+            android:id="@+id/action_special_day_fragment_to_birthday_fragment"
+            app:destination="@id/fragment_birthday"/>
+    </fragment>
+
+    <fragment
         android:id="@+id/fragment_birthday"
         android:name="com.example.favoritelistapplication.ui.birthday.BirthdayFragment"
         android:label="@string/title_birthday"
@@ -54,5 +66,6 @@
         android:label="@string/title_anniversary"
         tools:layout="@layout/fragment_anniversary">
     </fragment>
+
 
 </navigation>

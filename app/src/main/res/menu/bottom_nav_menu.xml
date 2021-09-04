@@ -7,9 +7,9 @@
         android:title="@string/title_fav_list" />
 
     <item
-        android:id="@+id/fragment_birthday"
+        android:id="@+id/fragment_special_day"
         android:icon="@drawable/ic_birthday_black_24dp"
-        android:title="@string/title_birthday" />
+        android:title="@string/title_special_day" />
 
 
 </menu>
