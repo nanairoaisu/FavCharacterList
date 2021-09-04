@@ -1,4 +1,4 @@
-package com.example.favoritelistapplication.ui.home
+package com.example.favoritelistapplication.ui.favList
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -7,7 +7,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject internal constructor() : ViewModel() {
+class FavListViewModel @Inject internal constructor() : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is home Fragment"

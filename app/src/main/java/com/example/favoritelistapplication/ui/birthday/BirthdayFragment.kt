@@ -8,17 +8,15 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.favoritelistapplication.databinding.FragmentDashboardBinding
+import com.example.favoritelistapplication.databinding.FragmentBirthdayBinding
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class BirthdayFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: BirthdayViewModel
-    private var _binding: FragmentDashboardBinding? = null
+    private lateinit var birthdayViewModel: BirthdayViewModel
+    private var _binding: FragmentBirthdayBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -26,14 +24,14 @@ class BirthdayFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
+        birthdayViewModel =
             ViewModelProvider(this).get(BirthdayViewModel::class.java)
 
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
+        _binding = FragmentBirthdayBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        birthdayViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

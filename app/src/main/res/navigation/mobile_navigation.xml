@@ -3,18 +3,56 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/fragment_fav_list"
+    tools:context=".MainActivity">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.favoritelistapplication.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/fragment_fav_list"
+        android:name="com.example.favoritelistapplication.ui.favList.FavListFragment"
+        android:label="@string/title_fav_list"
+        tools:layout="@layout/fragment_fav_list" >
+
+        <action
+            android:id="@+id/action_fav_list_fragment_to_fav_register_fragment"
+            app:destination="@id/fragment_fav_register" />
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_birthday"
+        android:id="@+id/fragment_fav_register"
+        android:name="com.example.favoritelistapplication.ui.favRegister.FavRegisterFragment"
+        android:label="@string/title_fav_register"
+        tools:layout="@layout/fragment_fav_register"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_fav_image_list"
+        android:name="com.example.favoritelistapplication.ui.favImageList.FavImageListFragment"
+        android:label="@string/title_fav_image_list"
+        tools:layout="@layout/fragment_fav_image_list"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_fav_image_register"
+        android:name="com.example.favoritelistapplication.ui.favImageRegister.FavImageRegisterFragment"
+        android:label="@string/title_fav_image_register"
+        tools:layout="@layout/fragment_fav_image_register"
+        >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_birthday"
         android:name="com.example.favoritelistapplication.ui.birthday.BirthdayFragment"
         android:label="@string/title_birthday"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_birthday" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_anniversary"
+        android:name="com.example.favoritelistapplication.ui.anniversary.AnniversaryFragment"
+        android:label="@string/title_anniversary"
+        tools:layout="@layout/fragment_anniversary">
+    </fragment>
 
 </navigation>

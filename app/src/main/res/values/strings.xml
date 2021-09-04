@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Favorite List Application</string>
-    <string name="title_home">Home</string>
+    <string name="title_fav_list">FavList</string>
+    <string name="title_fav_register">FavRegister</string>
+    <string name="title_fav_image_list">FavImageList</string>
+    <string name="title_fav_image_register">FavImageRegister</string>
     <string name="title_birthday">Birthday</string>
+    <string name="title_anniversary">Anniversary</string>
+
 </resources>
