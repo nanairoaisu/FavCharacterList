@@ -44,7 +44,7 @@ class FavListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.fab.setOnClickListener {
+        binding.fabNavPersonRegister.setOnClickListener {
             findNavController().navigate(R.id.action_fav_list_fragment_to_fav_register_fragment)
         }
     }
