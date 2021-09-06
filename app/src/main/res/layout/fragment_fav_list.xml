@@ -54,9 +54,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/desc_fab_person_register"
-            app:srcCompat="@drawable/ic_person_add_black_24dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/fab_add_menu"
-            app:layout_constraintEnd_toEndOf="@+id/fab_add_menu" />
+            app:layout_constraintEnd_toEndOf="@+id/fab_add_menu"
+            app:srcCompat="@drawable/ic_person_add_black_24dp" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab_nav_image_register"
@@ -64,9 +65,10 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:contentDescription="@string/desc_fab_image_register"
-            app:srcCompat ="@drawable/ic_photo_add_black_24dp"
+            android:visibility="gone"
             app:layout_constraintBottom_toTopOf="@+id/fab_nav_person_register"
-            app:layout_constraintEnd_toEndOf="@+id/fab_add_menu" />
+            app:layout_constraintEnd_toEndOf="@+id/fab_add_menu"
+            app:srcCompat="@drawable/ic_photo_add_black_24dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
