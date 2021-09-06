@@ -15,6 +15,10 @@
         <action
             android:id="@+id/action_fav_list_fragment_to_fav_register_fragment"
             app:destination="@id/fragment_fav_register" />
+
+        <action
+            android:id="@+id/action_fav_list_fragment_to_fav_image_register_fragment"
+            app:destination="@id/fragment_fav_image_register" />
     </fragment>
 
     <fragment

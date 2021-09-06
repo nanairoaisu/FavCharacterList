@@ -52,7 +52,7 @@ class FavListFragment : Fragment() {
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentFavListBinding.inflate(inflater, container, false)
 
         val textView: TextView = binding.textHome
@@ -74,7 +74,7 @@ class FavListFragment : Fragment() {
         }
 
         binding.fabNavImageRegister.setOnClickListener {
-
+            findNavController().navigate(R.id.action_fav_list_fragment_to_fav_image_register_fragment)
         }
     }
 
