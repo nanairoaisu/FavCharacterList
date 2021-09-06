@@ -7,6 +7,9 @@
     <string name="title_special_day">SpecialDay</string>
     <string name="title_birthday">Birthday</string>
     <string name="title_anniversary">Anniversary</string>
+    <string name="desc_fab_add">Fabを増やす</string>
+    <string name="desc_fab_person_register">推し登録画面へ</string>
+    <string name="desc_fab_image_register">推し画像登録画面へ</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
