@@ -12,14 +12,13 @@
         android:layout_height="match_parent"
         tools:context=".ui.favRegister.FavRegisterFragment">
 
-
         <ImageButton
             android:id="@+id/ib_fav_icon"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginTop="32dp"
-            android:contentDescription="@string/item_fav_icon"
             android:background="@drawable/shape_ib_fav_icon"
+            android:contentDescription="@string/item_fav_icon"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
