@@ -13,4 +13,13 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- FavRegister -->
+    <string name="item_fav_icon">推しのアイコン</string>
+    <string name="item_fav_name">推しの名前</string>
+    <string name="item_fav_birthday">推しの誕生日</string>
+    <string name="item_fav_anniversary">推しはじめた日</string>
+    <string name="hint_fav_name">あなたの推しの名前を入力</string>
+    <string name="hint_fav_birthday">あなたの推しの誕生日を登録</string>
+    <string name="hint_fav_anniversary">あなたの推しの記念日を登録</string>
+
 </resources>

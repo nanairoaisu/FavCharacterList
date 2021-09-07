@@ -7,11 +7,101 @@
 
     </data>
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.favRegister.FavRegisterFragment">
 
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
+        <ImageButton
+            android:id="@+id/ib_fav_icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="32dp"
+            android:contentDescription="@string/item_fav_icon"
+            android:background="@drawable/shape_ib_fav_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_photo_add_black_24dp" />
+
+        <TextView
+            android:id="@+id/tv_desc_fav_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/item_fav_name"
+            app:layout_constraintStart_toStartOf="@+id/tf_fav_name"
+            app:layout_constraintTop_toBottomOf="@id/ib_fav_icon" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tf_fav_name"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_fav_name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_fav_name"
+                android:textColorHint="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_desc_fav_birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/item_fav_birthday"
+            app:layout_constraintStart_toStartOf="@+id/bt_fav_birthday"
+            app:layout_constraintTop_toBottomOf="@+id/tf_fav_name" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_fav_birthday"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="17dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="17dp"
+            android:text="@string/hint_fav_birthday"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_fav_birthday" />
+
+        <TextView
+            android:id="@+id/tv_desc_fav_anniversary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/item_fav_anniversary"
+            app:layout_constraintStart_toStartOf="@+id/bt_fav_birthday"
+            app:layout_constraintTop_toBottomOf="@+id/bt_fav_birthday" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bt_fav_anniversary"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingStart="16dp"
+            android:paddingTop="17dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="17dp"
+            android:text="@string/hint_fav_anniversary"
+            android:textAlignment="textStart"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_desc_fav_anniversary" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
