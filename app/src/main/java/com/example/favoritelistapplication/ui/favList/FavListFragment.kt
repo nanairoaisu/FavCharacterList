@@ -20,6 +20,7 @@ class FavListFragment : Fragment() {
 
     private val homeViewModel: FavListViewModel by viewModels()
     private lateinit var binding: FragmentFavListBinding
+    private var isClicked: Boolean = false
 
     private val rotateOpen: Animation by lazy {
         AnimationUtils.loadAnimation(
@@ -45,8 +46,6 @@ class FavListFragment : Fragment() {
             R.anim.anim_to_button
         )
     }
-
-    private var isClicked: Boolean = false
 
     override fun onCreateView(
         inflater: LayoutInflater,
