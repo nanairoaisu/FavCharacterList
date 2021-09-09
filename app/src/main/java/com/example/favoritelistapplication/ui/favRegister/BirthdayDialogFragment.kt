@@ -3,7 +3,6 @@ package com.example.favoritelistapplication.ui.favRegister
 import android.app.DatePickerDialog
 import android.app.Dialog
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.DatePicker
 import androidx.core.os.bundleOf
