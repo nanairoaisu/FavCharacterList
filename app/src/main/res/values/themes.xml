@@ -20,4 +20,21 @@
     </style>
 
     <style name="Theme.FavoriteListApplication.ActionBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <!-- Dialog -> Picker -->
+    <style name="Style.customDatePicker" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:datePickerStyle">@style/customDatePicker</item>
+        <item name="android:buttonBarButtonStyle">@style/customTextButton</item>
+
+    </style>
+
+    <style name="customDatePicker" parent="@style/Widget.MaterialComponents.MaterialCalendar">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+        <item name="android:buttonBarButtonStyle">@style/customTextButton</item>
+    </style>
+
+    <style name="customTextButton" parent="@style/Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/black</item>
+    </style>
 </resources>
