@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import com.example.favoritelistapplication.databinding.FragmentFavRegisterBinding
 import dagger.hilt.android.AndroidEntryPoint
@@ -12,7 +13,7 @@ import dagger.hilt.android.AndroidEntryPoint
 @AndroidEntryPoint
 class FavRegisterFragment : Fragment() {
 
-    private val FavRegisterViewModel: FavRegisterViewModel by viewModels()
+    private val viewModel: FavRegisterViewModel by activityViewModels()
     private lateinit var binding: FragmentFavRegisterBinding
 
     override fun onCreateView(
@@ -31,8 +32,8 @@ class FavRegisterFragment : Fragment() {
         binding.btFavAnniversary.setOnClickListener {
             showAnniversaryDialog()
         }
-        childFragmentManager.setFragmentResultListener("reqAnni", viewLifecycleOwner) { key, bundle ->
-            val anniversary = bundle.getString("bundleAnni")
+
+        viewModel.anniversary.observe(viewLifecycleOwner){ anniversary ->
             binding.btFavAnniversary.text = anniversary
         }
 
@@ -40,8 +41,8 @@ class FavRegisterFragment : Fragment() {
         binding.btFavBirthday.setOnClickListener {
             showBirthdayDialog()
         }
-        childFragmentManager.setFragmentResultListener("reqBirth", viewLifecycleOwner) { key, bundle ->
-            val birthday = bundle.getString("bundleBirth")
+
+        viewModel.birthday.observe(viewLifecycleOwner){ birthday ->
             binding.btFavBirthday.text = birthday
         }
 

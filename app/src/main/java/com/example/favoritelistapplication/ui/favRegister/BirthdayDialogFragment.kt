@@ -5,14 +5,15 @@ import android.app.Dialog
 import android.os.Bundle
 import android.view.View
 import android.widget.DatePicker
-import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.activityViewModels
 import com.example.favoritelistapplication.R
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 
 @AndroidEntryPoint
 class BirthdayDialogFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
+    private val viewModel: FavRegisterViewModel by activityViewModels()
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val calendar = Calendar.getInstance()
@@ -38,8 +39,7 @@ class BirthdayDialogFragment : DialogFragment(), DatePickerDialog.OnDateSetListe
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         // よくわからないが選択した月-1がのデータが得られるので+1にしてある
-        val date = "${month + 1}月${dayOfMonth}日"
-        fragmentManager?.setFragmentResult("reqBirth", bundleOf("bundleBirth" to date))
+        viewModel.registerBirthday(month + 1, dayOfMonth)
     }
 
 }

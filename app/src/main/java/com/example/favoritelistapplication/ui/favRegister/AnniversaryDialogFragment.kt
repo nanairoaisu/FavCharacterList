@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.widget.DatePicker
 import androidx.core.os.bundleOf
 import androidx.fragment.app.DialogFragment
+import androidx.fragment.app.activityViewModels
 import com.example.favoritelistapplication.R
 import dagger.hilt.android.AndroidEntryPoint
 import java.util.*
 
 @AndroidEntryPoint
 class AnniversaryDialogFragment : DialogFragment(), DatePickerDialog.OnDateSetListener {
+    private val viewModel: FavRegisterViewModel by activityViewModels()
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val calendar = Calendar.getInstance()
@@ -33,8 +35,7 @@ class AnniversaryDialogFragment : DialogFragment(), DatePickerDialog.OnDateSetLi
 
     override fun onDateSet(view: DatePicker?, year: Int, month: Int, dayOfMonth: Int) {
         // よくわからないが選択した月-1がのデータが得られるので+1にしてある
-        val date = "${year}年${month + 1}月${dayOfMonth}日"
-        fragmentManager?.setFragmentResult("reqAnni", bundleOf("bundleAnni" to date))
+        viewModel.registerAnniversary(year, month + 1, dayOfMonth)
     }
 
 }
